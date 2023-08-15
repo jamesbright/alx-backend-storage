@@ -1,0 +1,4 @@
+// Script that deletes all Docs in the school Collection
+db.school.deleteMany(
+	{ name:"Holberton school" }
+)
