@@ -1,4 +1,4 @@
-!/usr/bin/env python3
+#!/usr/bin/env python3
 """Print info in a collection"""
 from pymongo import MongoClient
 
