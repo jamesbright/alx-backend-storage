@@ -4,6 +4,7 @@
 import redis
 from uuid import uuid4
 from functools import wraps
+from sys import byteorder
 from typing import Any, Callable, Optional, Union
 
 
@@ -54,6 +55,7 @@ def replay(method: Callable):
                                      j.decode("utf-8")))
 
 
+
 class Cache:
     """ Caching class
     """
@@ -94,4 +96,3 @@ class Cache:
         """ Method that get a int from bytes.
         """
         return int.from_bytes(data, byteorder)
-
